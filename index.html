@@ -170,6 +170,13 @@
       console.warn('Console Warn Button');
     }
     errorBtns[3].addEventListener('click', cwarn);
+    const x = 3 - 2;
+    const y = 4 - 3;
+    const reason = 'x is expected to be equal to y';
+    function cassert() {
+      console.assert(x == y, {x, y, reason});
+    }
+    errorBtns[4].addEventListener('click', cassert);
   </script>
 </body>
 
