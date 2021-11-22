@@ -216,7 +216,9 @@
       console.log('catch custom error');
     }
 
-    
+    if (window.onerror) {
+      console.log('error caught');
+    }
   </script>
 </body>
 
