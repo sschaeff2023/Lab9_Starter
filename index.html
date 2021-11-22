@@ -201,6 +201,20 @@
       alert( 'catch' );
       console.error('invalid syntax');
     }
+
+    class CustomError extends Error {
+      constructor(message) {
+        super(message);
+        this.name = "CustomError";
+      }
+    }
+    try {
+      alert( 'try' );
+      throw new CustomError('custom error message');
+    } catch (err) {
+      alert( 'custom' );
+      console.log('catch custom error');
+    }
   </script>
 </body>
 
