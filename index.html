@@ -101,7 +101,10 @@
     let errorBtns = Array.from(document.querySelectorAll('#error-btns > button'));
 
     // Start your code here
-    // You may move this JS to another file if you wish
+    function clog() {
+      console.log('Console Log Button');
+    }
+    errorBtns[0].addEventListener("click", clog);
   </script>
 </body>
 
