@@ -141,6 +141,15 @@
       console.dirxml(document);
     }
     errorBtns[7].addEventListener('click', cdirxml);
+    const label = 'CSE 110';
+    function cgroupstart() {
+      console.group(label);
+    }
+    errorBtns[8].addEventListener('click', cgroupstart);
+    function cgroupend() {
+      console.groupEnd(label);
+    }
+    errorBtns[9].addEventListener('click', cgroupend);
   </script>
 </body>
 
