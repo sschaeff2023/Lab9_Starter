@@ -114,7 +114,23 @@
     }
     errorBtns[5].addEventListener('click', cclear);
     function ctable() {
-      console.table([{button: 'Console Assert', todo: 'True',},{button: 'Console Dir', todo: 'True',},{button: 'Console Error', todo: 'False',}]);
+      console.table([
+        {button: 'Console Log', todo: 'False',},
+        {button: 'Console Error', todo: 'False',},
+        {button: 'Console Count', todo: 'True',},
+        {button: 'Console Warn', todo: 'True',},
+        {button: 'Console Assert', todo: 'True',},
+        {button: 'Console Clear', todo: 'False',},
+        {button: 'Console Dir', todo: 'True',},
+        {button: 'Console dirxml', todo: 'True',},
+        {button: 'Console Group Start', todo: 'True',},
+        {button: 'Console Group End', todo: 'True',},
+        {button: 'Console Table', todo: 'False',},
+        {button: 'Start Timer', todo: 'True',},
+        {button: 'End Timer', todo: 'True',},
+        {button: 'Console Trace', todo: 'True',},
+        {button: 'Trigger a Global Error', todo: 'True',}
+      ]);
     }
     errorBtns[10].addEventListener('click', ctable);
   </script>
