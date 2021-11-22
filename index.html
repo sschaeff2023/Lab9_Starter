@@ -141,7 +141,7 @@
       console.dirxml(document);
     }
     errorBtns[7].addEventListener('click', cdirxml);
-    const label = 'CSE 110';
+    const label = 'Console Group Button';
     function cgroupstart() {
       console.group(label);
     }
@@ -158,6 +158,10 @@
       console.timeEnd();
     }
     errorBtns[12].addEventListener('click', etimer);
+    function ctrace() {
+      console.trace();
+    }
+    errorBtns[13].addEventListener('click', ctrace);
   </script>
 </body>
 
