@@ -213,10 +213,12 @@
       throw new CustomError('custom error message');
     } catch (err) {
       alert( 'custom' );
-      console.log('catch custom error');
+      if (window.onerror) {
+        console.log('catch custom error');
+      }
     }
 
-    if (window.onerror) {
+    if (!window.onerror) {
       console.log('error caught');
     }
   </script>
