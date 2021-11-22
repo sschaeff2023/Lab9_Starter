@@ -113,6 +113,10 @@
       console.clear();
     }
     errorBtns[5].addEventListener('click', cclear);
+    function ctable() {
+      console.table([{button: 'Console Assert', todo: 'True',},{button: 'Console Dir', todo: 'True',},{button: 'Console Error', todo: 'False',}]);
+    }
+    errorBtns[10].addEventListener('click', ctable);
   </script>
 </body>
 
