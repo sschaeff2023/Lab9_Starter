@@ -177,6 +177,17 @@
       console.assert(x == y, {x, y, reason});
     }
     errorBtns[4].addEventListener('click', cassert);
+
+    try {
+      alert( 'try' );
+      console.dir(document.dne);
+    } catch (err) {
+      alert( 'catch' );
+      console.error('Object Does Not Exist');
+    } finally {
+      alert( 'finally' );
+      console.log('Try Catch Finally');
+    }
   </script>
 </body>
 
