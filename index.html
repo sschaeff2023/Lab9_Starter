@@ -189,6 +189,18 @@
       alert( 'finally' );
       console.log('try...catch...finally');
     }
+
+    try {
+      alert( 'try' );
+      if (!document.dne) {
+        alert( 'throw' );
+        throw new SyntaxError('does not exist');
+      }
+      console.warn('does exist');
+    } catch (SyntaxError) {
+      alert( 'catch' );
+      console.error('invalid syntax');
+    }
   </script>
 </body>
 
